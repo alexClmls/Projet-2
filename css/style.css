@@ -58,7 +58,7 @@ a {
     color: var(--main-color);
 }
 
-nav {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,7 +73,7 @@ nav {
 }
 
 
-.links {
+nav {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
@@ -420,7 +420,7 @@ nav {
 /****** Media queries ***********/
 @media (max-width: 1440px) {
     
-    nav {
+    header {
         margin-left: -20px;
         width: 105%;
     }
@@ -428,12 +428,14 @@ nav {
         display: flex;
         justify-content: center;
     }
+}    
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     
-    nav {
+    header {
         margin-left: 0;
+
     }   
 
     #hebergements-and-populaires {
@@ -494,13 +496,14 @@ nav {
     }
 
 
-    nav {
+    header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         margin-left: 0;
+        
     }
 
     .logo {
@@ -514,7 +517,6 @@ nav {
         margin-top: 10px;
         border: 2px solid transparent;
         width: 100%;
-        margin-right: -30px;
         display: flex;
         justify-content: center;
     }
@@ -524,7 +526,7 @@ nav {
         border-top: 0;
     }
 
-    .links {
+    nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -547,7 +549,7 @@ nav {
     .search-border {
         width: auto;
         border: none;
-        justify-content: center;
+        justify-content: start;
         padding-top: 35px;
         padding-bottom: 35px;
     }
@@ -561,7 +563,7 @@ nav {
     }
 
     .recherche {
-        width: 300px;
+        width: 100%;
     }
 
 
@@ -579,7 +581,7 @@ nav {
     }
 
     .filter-button {
-        width: 162.5px;
+        width: auto;
         margin-right: 0;
         margin-top: 20px;
     }
@@ -597,9 +599,11 @@ nav {
         padding: 0;
         margin-bottom: 15px;
     }
+
     #hebergements-and-populaires {
         margin-top: 0;
     }
+
     #hebergements-and-populaires section {
         border-radius: 0;
     }
@@ -681,7 +685,5 @@ nav {
     .foot-block-mobile {
         margin-top: 50px;
         margin-bottom: 50px;
-
     }
-
 }
